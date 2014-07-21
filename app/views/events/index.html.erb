@@ -1,0 +1,13 @@
+
+<%= @events.group_by { |click| click.created_at.to_date } %>
+
+<h1>Events#index</h1>
+<p>Find me in app/views/events/index.html.erb</p>
+<% @events.each do |event| %>
+<li> <%= event.click %> <%= event.created_at %></li>
+
+<% end %>
+
+
+
+

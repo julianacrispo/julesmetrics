@@ -4,6 +4,7 @@ require 'faker'
   Event.create(
     click: "http://www.dailypuppy.com/"
     )
+
 end
 Events = Event.all
 

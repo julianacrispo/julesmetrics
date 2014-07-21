@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-root 'home#index'
+get 'events/index'
+match 'events' => "events#index", via: :options
+root 'events#index'
 end
 
   # The priority is based upon order of creation: first created -> highest priority.
